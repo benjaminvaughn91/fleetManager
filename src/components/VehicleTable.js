@@ -65,7 +65,7 @@ const VehicleTable = () => {
           <Table.HeaderCell>Driver</Table.HeaderCell>
           <Table.HeaderCell width={2}>Status</Table.HeaderCell>
           <Table.HeaderCell> Fuel Type</Table.HeaderCell>
-          <Table.HeaderCell width={1}>Equipment</Table.HeaderCell>
+          <Table.HeaderCell width={1}>More</Table.HeaderCell>
           <Table.HeaderCell width={1}>Update</Table.HeaderCell>
         </Table.Row>
       </Table.Header>
