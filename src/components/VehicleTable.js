@@ -15,15 +15,16 @@ const VehicleTable = () => {
 
     const vehicleInputElement = useRef(null);
     const equipmentInputElement = useRef(null);
+
+    const [errorMessage, setErrorMessage] = useState('')
     
+    //If there is no data in the global state, add the default data from the data-folder:
     useEffect(() => {
         if (vehicles.length === 0) 
             dispatch(initializeVehicles(defaultVechiles))
         if (equipments.length === 0) 
             dispatch(initializeEquipments(defaultEquipments))
     }, [dispatch, vehicles, equipments])
-
-    const [errorMessage, setErrorMessage] = useState('')
 
     const uploadVehicles = e => {
         const fileReader = new FileReader();

@@ -26,10 +26,8 @@ const UpdateVehicleForm = ({vehicle, closeModal, myEquipments}) => {
         const id = Number(event.target.value)
         if (!(equipmentIds.includes(id)))
             setEquipmentIds(equipmentIds.concat(id))
-        else {
-            const newArr = equipmentIds.filter(item => item !== id)
-            setEquipmentIds(newArr)
-        }
+        else 
+            setEquipmentIds(equipmentIds.filter(item => item !== id))
     }
 
     const onSubmit = () => {

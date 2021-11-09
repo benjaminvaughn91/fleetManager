@@ -1,4 +1,5 @@
 
+//Checks that the uploaded json-file is a list of vehicles
 export const isVehicleList = (vehicles) => {
     let isCorrectFormat = true
     vehicles.forEach((vehicle) => {
@@ -13,6 +14,7 @@ export const isVehicleList = (vehicles) => {
     return isCorrectFormat
 }
 
+//Checks that the uploaded json-file is a list of equipments
 export const isEquipmentList = (equipments) => {
     let isCorrectFormat = true
     equipments.forEach((equipment) => {
