@@ -1,4 +1,4 @@
-This application displays a list of vehicles. It was built with React and Redux.
+This application displays a list of vehicles. It was built with React, Redux and Semantic UI.
 
 Click the arrow-button to see the equipment of the vehicle and the cogwheel to update it.
 
